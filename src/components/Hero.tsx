@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download, Mail, MapPin, Phone } from "lucide-react";
+import { Download, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
@@ -109,6 +109,31 @@ const Hero = () => {
               >
                 <Mail className="w-4 h-4" />
                 Get in Touch
+              </a>
+            </motion.div>
+
+            {/* Social Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="flex justify-center lg:justify-start gap-4 mt-6"
+            >
+              <a
+                href="https://github.com/vamsikrishna0203"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 hover:scale-110 group"
+              >
+                <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vamsi-krishna-r-vam/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 glass-card rounded-full flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 hover:scale-110 group"
+              >
+                <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
             </motion.div>
           </div>

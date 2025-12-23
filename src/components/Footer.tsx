@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { Github, Heart, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,16 +11,26 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-6 text-sm">
             <a
+              href="https://github.com/vamsikrishna0203"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vamsi-krishna-r-vam/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a
               href="mailto:rvamsikrishna258@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               Email
-            </a>
-            <a
-              href="tel:9398461186"
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Phone
             </a>
           </div>
         </div>
